@@ -1,7 +1,12 @@
 <?php
 
-class Paginas {
-    public function sobre($id1, $id2, $id3){
-        echo $id1 . " " . $id2 . " " . $id3.'<hr>';
+class Paginas extends Controller {
+
+    public function index(){
+        $this->view('paginas/home');
+    }
+
+    public function sobre(){
+    
     }
 }
